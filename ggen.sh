@@ -27,7 +27,7 @@ if [ ! -f "$TEST_RESULTS_FILE" ]; then
 fi
 #Editing Job Name
 if [ -z "$JMETER_HOME" ]; then
-	JMETER_HOME=/home/jenkins/workspace/Reporting_PublicGIT/apache-jmeter-3.0
+	JMETER_HOME=/home/ptruns/workspace/Reporting_PublicGIT/apache-jmeter-3.0
 	echo "JMETER_HOME not explicitly set, defaulting to $JMETER_HOME"
 fi
 
