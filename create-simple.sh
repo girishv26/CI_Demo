@@ -13,4 +13,7 @@ rm -f $SIMPLIFIED_RESULTS_FILE
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" > $SIMPLIFIED_RESULTS_FILE
 echo "<testResults version=\"1.2\">" >> $SIMPLIFIED_RESULTS_FILE
 cat $RESULTS_FILE | grep "<httpSample" | sed 's/\(.*\)>\s*$/\1\/>/' >> $SIMPLIFIED_RESULTS_FILE
-echo "</testResults>" >>
+echo "</testResults>" >> $SIMPLIFIED_RESULTS_FILE
+echo "" >> $SIMPLIFIED_RESULTS_FILE
+
+echo "Created simplified test results file: $SIMPLIFIED_RESULTS_FILE"
